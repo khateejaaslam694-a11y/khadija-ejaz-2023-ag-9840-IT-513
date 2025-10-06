@@ -1,0 +1,217 @@
+/* Color Palette from Image:
+* Gray (X11): #C1BEB9 (Main Background/Light Text)
+* Gold Fusion: #76824D (Accents/Links/Buttons)
+* Pale Silver: #DBBABF (Secondary Background/Headers Background)
+* China Rose: #B05276 (Primary Text/Stronger Accents)
+* Burgundy: #7D0531 (Dark Text/Footer Background)
+*/
+
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: #C1BEB9; /* Gray (X11) for main background */
+    color: #7D0531; /* Burgundy for default text */
+}
+
+a {
+    color: #76824D; /* Gold Fusion for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #B05276; /* China Rose for link hover */
+    text-decoration: underline;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #DBBABF; /* Pale Silver for header background */
+    color: #7D0531; /* Burgundy for header text */
+    padding: 10px 20px;
+    border-bottom: 5px solid #B05276; /* China Rose border for separation */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: square;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #7D0531; /* Burgundy for nav links */
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #76824D; /* Gold Fusion on hover */
+    text-decoration: line-through;
+}
+
+/* --- Main Content Layout --- */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Use white for readability in the main section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #B05276; /* China Rose for section headings */
+    border-bottom: 2px solid #DBBABF; /* Pale Silver underline */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #f7f5f4; /* Slightly off-white for articles to separate content */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #76824D; /* Gold Fusion accent */
+    border-radius: 4px;
+}
+
+article h3 {
+    color: #7D0531; /* Burgundy for article subheadings */
+    margin-top: 0;
+}
+
+/* --- Lists and Tables --- */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+caption {
+    font-weight: bold;
+    color: #76824D; /* Gold Fusion for captions */
+    margin-bottom: 5px;
+}
+
+th, td {
+    border: 1px solid #DBBABF; /* Pale Silver table borders */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #B05276; /* China Rose for table headers */
+    color: white;
+}
+
+/* --- Forms (Registration/Contact) --- */
+fieldset {
+    border: 2px solid #76824D; /* Gold Fusion border for fieldset */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    color: #B05276; /* China Rose for legend text */
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #C1BEB9; /* Gray (X11) border */
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Make labels take up full width for better alignment */
+    margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #76824D; /* Gold Fusion for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #B05276; /* China Rose on hover */
+}
+
+/* --- Details/Summary (Contact/Products) --- */
+summary {
+    cursor: pointer;
+    color: #76824D; /* Gold Fusion for summary text */
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+details[open] summary {
+    color: #7D0531; /* Burgundy when details are open */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #7D0531; /* Burgundy for a deep, rich footer */
+    color: #C1BEB9; /* Gray (X11) for light footer text */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer nav a {
+    color: #DBBABF; /* Pale Silver for footer links */
+}
+
+footer nav a:hover {
+    color: #C1BEB9; /* Gray (X11) on hover */
+}
+
+footer nav ul {
+    margin-bottom: 10px;
+}
