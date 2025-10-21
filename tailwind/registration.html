@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>WebDev Course - Registration</title>
+</head>
+<body class="bg-[#C1BEB9] font-sans">
+    <header class="bg-[#B05276] text-white p-4 shadow-xl">
+        <h1 class="text-3xl font-bold">WebDev Course</h1>
+        <nav>
+            <ul class="flex space-x-4 mt-2">
+                <li><a href="index.html" class="hover:text-[#DBBABF]">Home</a></li>
+                <li><a href="registration.html" class="font-medium hover:text-[#DBBABF]">Registration</a></li>
+                <li><a href="products.html" class="hover:text-[#DBBABF]">Products</a></li>
+                <li><a href="contact.html" class="hover:text-[#DBBABF]">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 mt-8">
+        <section class="bg-[#DBBABF] p-6 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 pb-2 text-[#B05276] border-[#B05276]">User Registration</h2>
+            <form action="registration-success.html" method="get" class="max-w-xl space-y-6">
+                <fieldset class="border border-gray-400 p-4 rounded-lg space-y-4">
+                    <legend class="text-xl font-semibold px-2 text-[#7D0531]">Personal Information</legend>
+                    
+                    <div>
+                        <label for="first-name" class="block mb-1 font-medium text-[#7D0531]">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]">
+                    </div>
+                    <div>
+                        <label for="last-name" class="block mb-1 font-medium text-[#7D0531]">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-1 font-medium text-[#7D0531]">Email:</label>
+                        <input type="email" id="email" name="email" required class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]">
+                    </div>
+                    <div>
+                        <label for="phone" class="block mb-1 font-medium text-[#7D0531]">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]">
+                    </div>
+                </fieldset>
+                
+                <fieldset class="border border-gray-400 p-4 rounded-lg space-y-4">
+                    <legend class="text-xl font-semibold px-2 text-[#7D0531]">Course Selection</legend>
+                    
+                    <div>
+                        <label for="course" class="block mb-1 font-medium text-[#7D0531]">Select a Course:</label>
+                        <select id="course" name="course" required class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]">
+                            <option value="">-- Choose a Course --</option>
+                            <option value="html">HTML5 Fundamentals</option>
+                            <option value="css">CSS3 Styling</option>
+                            <option value="javascript">JavaScript Basics</option>
+                            <option value="react">Advanced React</option>
+                            <option value="bundle">Complete Web Developer Bundle</option>
+                        </select>
+                    </div>
+
+                    <p class="pt-2">
+                        <span class="block mb-2 font-medium text-[#7D0531]">Areas of Interest:</span>
+                        <div class="space-y-1 text-gray-800">
+                            <input type="checkbox" id="frontend" name="interests" value="frontend" class="mr-2">
+                            <label for="frontend">Frontend Development</label><br>
+                            
+                            <input type="checkbox" id="backend" name="interests" value="backend" class="mr-2">
+                            <label for="backend">Backend Development</label><br>
+                            
+                            <input type="checkbox" id="fullstack" name="interests" value="fullstack" class="mr-2">
+                            <label for="fullstack">Full Stack Development</label>
+                        </div>
+                    </p>
+                    
+                    <div>
+                        <label for="comments" class="block mb-1 font-medium text-[#7D0531]">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" class="border border-gray-400 p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-[#B05276]"></textarea>
+                    </div>
+                </fieldset>
+                
+                <div class="flex space-x-4">
+                    <button type="submit" class="bg-[#B05276] text-white px-6 py-2 rounded hover:bg-[#7D0531] transition duration-300 font-bold">Register</button>
+                    <button type="reset" class="bg-[#75824D] text-white px-6 py-2 rounded hover:bg-[#B05276] transition duration-300">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-[#7D0531] text-white p-4 mt-8 text-center">
+        <p class="mb-2">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html" class="hover:text-[#DBBABF]">Home</a></li>
+                <li><a href="registration.html" class="hover:text-[#DBBABF]">Registration</a></li>
+                <li><a href="products.html" class="hover:text-[#DBBABF]">Products</a></li>
+                <li><a href="contact.html" class="hover:text-[#DBBABF]">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="text-sm mt-2 text-gray-300">This website demonstrates HTML5 semantic structure now with basic Tailwind CSS styling.</p>
+    </footer>
+</body>
+</html>
